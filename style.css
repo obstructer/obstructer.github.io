@@ -1,5 +1,7 @@
-img.phone {
+div.phone {
   margin: auto;
   top:50%;
   left:50%;
+  width:800px;
+  height:100px;
 }
