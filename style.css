@@ -1,4 +1,5 @@
 img.phone {
   margin: auto;
-  vertical-align: middle;
+  top:50%;
+  left:50%;
 }
