@@ -1,8 +1,4 @@
-div.phone {
-  content:url(https://cloud.githubusercontent.com/assets/9418032/9971094/5e3f5ffa-5e27-11e5-867c-b4e0134397aa.png);
-  margin: auto;
-  width: 60%;
-}
 img.phone {
   margin: auto;
+  vertical-align: middle;
 }
