@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <title>Solo Photo</title>
-  </head>
+</head>
 
-  <body></body>
+<body>
+    <section id="solophoto_1">
+        <article id="solophototitle">Solo Photo</article>
+        <p id="solophotodesc">No more gallery scrolling</p>
+        <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+            <div class="hsContainer">
+                <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="solophoto-parallax-container" data-type="background" data-speed="10">
+        <article></article>
+    </section>
+    <section id="image">
+        <h1>Image</h1>
+        <h3>Select a photo when prompted and it opens in Solo Photo. No scrolling, no access. It’s that simple.</h3>
+    </section>
+    <section id="video">
+        <h1>Video</h1>
+        <h3>Play videos separately</h3>
+    </section>
+    <section id="internet">
+        <h1>Internet</h1>
+        <h3>Open internet links separately from your browser</h3>
+    </section>
+    <section id="share">
+        <h1>Share</h1>
+        <h3>Share directly from your gallery to Solo Photo</h3>
+    </section>
+    <script type="text/javascript" src="skrollr.js"></script>
+    <script type="text/javascript" src="jscript.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#solophoto-parallax-container').parallax({
+            imageSrc: "https://cloud.githubusercontent.com/assets/9418032/10077208/523163e0-62ad-11e5-854c-bfbf0825a8dc.png"
+        });
+    });
+</script>
+
 </html>

@@ -1,9 +1,15 @@
-html {
+/* html {
     background-color: #ffffff;
     background-image: -webkit-linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
+} */
+
+body,
+html {
+    height: 100%;
 }
+
 body {
     /* margin: 10px;
     padding: 2em 2em 4em; */
@@ -25,6 +31,11 @@ body {
     position: relative;
     left: 180px;
     top: 200px;
+    float: left;
+}
+
+#image {
+    float: right;
 }
 
 #phone {
@@ -35,6 +46,7 @@ body {
     right: 250px;
 }
 
+section,
 div {
     font-size: 32px;
 }
@@ -95,18 +107,50 @@ a:link {
     color: inherit;
 }
 
-#solophotopage {
-    position: relative;
-    height: 1000px;
-    bottom: -600px;
-    background-color: #90CAF9;
+#solophoto_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    color: #fefefe;
 }
 
-#obstructerpage {
-    position: relative;
-    height: 1000px;
-    bottom: -600px;
-    background-color: #EF9A9A;
+#obstructer_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    color: #fefefe;
+}
+
+#solophoto_1 article {
+    text-align: center;
+    font-size: 36pt;
+}
+
+#solophoto-parallax-container {
+    height: 100%;
+    background: url(https://cloud.githubusercontent.com/assets/9418032/10077208/523163e0-62ad-11e5-854c-bfbf0825a8dc.png);
+}
+
+#obstructer-parallax-container {
+    height: 100%;
+    background: url(https://cloud.githubusercontent.com/assets/9418032/10091072/b0d5c20e-6304-11e5-8a96-6ad5625bd575.png);
+}
+
+#obstructer_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+#obstructer_1 h3 {
+    text-align: center;
+}
+
+section {
+    height: 100%;
 }
 
 .link-spanner {
@@ -117,4 +161,22 @@ a:link {
     left: 0;
     z-index: 1;
     background-image: url('empty.gif');
+}
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
 }

@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="skrollr.js"></script>
+    <script type="text/javascript" src="jscript.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SShadows</title>
-  </head>
+    <meta name="description" content="SShadows: Simple privacy.">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+</head>
 
-  <body>
+<body>
     <div id="title">
-          <h1>SShadows</h1>
-          <h2>Simple privacy</h2>
-      </div>
-      <img id="phone" src="https://cloud.githubusercontent.com/assets/9418032/9971094/5e3f5ffa-5e27-11e5-867c-b4e0134397aa.png" width="25%">
-      <div class="link" id="buttons">
-          <div id="solophoto">
-              <a class="link" href="#solophotopage" style="text-decoration: none"><span class="link-spanner"></span>Solo Photo</a>
-          </div>
-          <div id="obstructer">
-              <a class="link" href="#obstructerpage" style="text-decoration: none"><span class="link-spanner"></span>Obstructer</a>
-          </div>
-      </div>
-      <div id="solophotopage">
-      </div>
-      <div id="obstructerpage">
+        <h1>SShadows</h1>
+        <h2>Simple privacy</h2>
+    </div>
+    <div id="image">
+        <img id="phone" src="https://cloud.githubusercontent.com/assets/9418032/9971094/5e3f5ffa-5e27-11e5-867c-b4e0134397aa.png" width="25%">
+    </div>
+    <div class="link" id="buttons">
+        <div id="solophoto">
+            <a class="link" href="solophoto.html" style="text-decoration: none"><span class="link-spanner"></span>Solo Photo</a>
+        </div>
+        <div id="obstructer">
+            <a class="link" href="obstructer.html" style="text-decoration: none"><span class="link-spanner"></span>Obstructer</a>
+        </div>
+    </div>
 
-      </div>
-      <script>
-          //------------------ Smooth Scroll on click ------------------------------
-          $(function () {
-              $('.link').click(function () {
-                  var id = $(this).attr('href');
-                  $('html,body').animate({
-                      scrollTop: $(id).offset().top
-                  }, 'slow');
-                  // Prevent default behavior of link
-                  return false;
-              });
-          });
-      </script>
 
-    </body>
+    <script>
+        //------------------ Smooth Scroll on click ------------------------------
+        $(function () {
+            $('.link').click(function () {
+                var id = $(this).attr('href');
+                $('html,body').animate({
+                    scrollTop: $(id).offset().top
+                }, 'slow');
+                // Prevent default behavior of link
+                return false;
+            });
+        });
+    </script>
+</body>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-57379917-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
 </html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
