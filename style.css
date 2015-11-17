@@ -10,9 +10,10 @@ html {
     height: 100%;
 }
 
-body {
+
+/* body {
     /* margin: 10px;
-    padding: 2em 2em 4em; */
+    padding: 2em 2em 4em; 
     margin: 0;
     padding: 0;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -21,7 +22,7 @@ body {
     color: #565656;
     background-color: #fefefe;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-}
+} */
 
 #titlephone {
     position: relative;
@@ -91,6 +92,15 @@ div {
     color: #C62828;
     background-color: #ffffff;
     box-shadow: 0px 0px 0px 4px #C62828 inset;
+}
+
+#video {
+    position: absolute float: right;
+    height: 1000px;
+    width: 45%;
+    text-align: center;
+    padding: 35px 0;
+    margin-right: 5%;
 }
 
 #buttons {
